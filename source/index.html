@@ -94,22 +94,22 @@
         <div class="comparison-slider">
           <img class="comparison-slider__image comparison-slider__image--before" src="#" width="280" height="256" alt="Фото кота до похудения.">
           <img class="comparison-slider__image comparison-slider__image--after" src="#" width="280" height="256" alt="Фото кота после похудения.">
-          <label class="comparison-slider__control">
-            <span class="visually-hidden">Ползунок для сравнения фото кота до и после похудения</span>
-            <input class="comparison-slider__handle" type="range" min="0" max="100" value="50">
-          </label>
+          <div class="comparison-slider__control">
+            <label class="visually-hidden" for="comparison-slider-toggle">Ползунок для сравнения фото кота до и после похудения</label>
+            <input class="comparison-slider__handle" type="range" name="comparison-slider__toggle" id="comparison-slider-toggle" min="0" max="100" value="50">
+          </div>
         </div>
       </section>
     </main>
     <footer class="main-footer">
       <h2 class="visually-hidden">Контакты и информация</h2>
-      <section class="main-footer__address address">
+      <div class="main-footer__address address">
         <address class="address__wrapper">
           <p class="address__title">Приглашаем к сотрудничеству дилеров!</p>
           <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </address>
         <img class="main-footer__map" src="#" width="320" height="362" alt="Карта Санкт-Петербурга: расположение магазина Cat Energy (ул. Большая Конюшенная, д. 19/8) отмечено меткой.">
-      </section>
+      </div>
       <div class="contacts">
         <a class="contacts__logo-link" href="index.html">
           <img class="contacts__logo-text" src="#" width="128" height="24" alt="Логотип Cat Energy.">

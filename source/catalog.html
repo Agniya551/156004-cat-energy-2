@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <title>Каталог продукции</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/favicon-180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="CAT ENERGY — главная страница">
-        <img class="main-header__logo-icon" src="#" width="33" height="38" alt="Логотип в виде котика">
-        <img class="main-header__logo-text" src="#" width="101" height="18" alt="CAT ENERGY">
+      <a class="main-header__logo" href="index.html" aria-label="CAT ENERGY — главная страница">
+        <picture>
+          <source media="(min-width: 1440px)" width="59" height="70" type="image/svg+xml" srcset="images/logo-icon-tablet-desk.svg">
+          <source media="(min-width: 768px)" width="50" height="60" type="image/svg+xml" srcset="images/logo-icon-tablet-desk.svg">
+          <img class="main-header__logo-icon" width="33" height="38" src="images/logo-icon-mobile.svg" alt="Логотип в виде котика">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-text-dual-color.svg">
+          <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-text-dual-color.svg">
+          <img class="main-header__logo-text" width="101" height="18" src="images/logo-text.svg" alt="CAT ENERGY">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -41,7 +53,10 @@
             <li class="catalog__item product">
               <a class="product__link" href="#">
                 <h3 class="product__title">Cat Energy PRO 500 г</h3>
-                <img class="product__image" src="#" width="140" height="107" alt="Банка еды для котов со вкусом курицы.">
+                <picture>
+                  <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/products/chicken-sm-tablet-desk@1x.png 1x, images/products/chicken-sm-tablet-desk@2x.png 2x">
+                  <img class="product__image" width="140" height="107" src="images/products/chicken-sm-mobile@1x.png" srcset="images/products/chicken-sm-mobile@2x.png 2x" alt="Банка еды для котов со вкусом курицы.">
+                </picture>
               </a>
               <dl class="product__desc-list">
                 <dt class="product__desc-name">Масса</dt>
@@ -58,7 +73,10 @@
             <li class="catalog__item product">
               <a class="product__link" href="#">
                 <h3 class="product__title">Cat Energy PRO 1000 г</h3>
-                <img class="product__image" src="#" width="140" height="107" alt="Банка еды для котов со вкусом курицы.">
+                <picture>
+                  <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/products/chicken-lg-tablet-desk@1x.png 1x, images/products/chicken-lg-tablet-desk@2x.png 2x">
+                  <img class="product__image" width="140" height="107" src="images/products/chicken-lg-mobile@1x.png" srcset="images/products/chicken-lg-mobile@2x.png 2x" alt="Банка еды для котов со вкусом курицы, большая.">
+                </picture>
               </a>
               <dl class="product__desc-list">
                 <dt class="product__desc-name">Масса</dt>
@@ -75,7 +93,10 @@
             <li class="catalog__item product">
               <a class="product__link" href="#">
                 <h3 class="product__title">Cat Energy PRO 500 г</h3>
-                <img class="product__image" src="#" width="140" height="107" alt="Банка еды для котов со вкусом рыбы.">
+                <picture>
+                  <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/products/fish-sm-tablet-desk@1x.png 1x, images/products/fish-sm-tablet-desk@2x.png 2x">
+                  <img class="product__image" width="140" height="107" src="images/products/fish-sm-mobile@1x.png" srcset="images/products/fish-sm-mobile@2x.png 2x" alt="Банка еды для котов со вкусом рыбы.">
+                </picture>
               </a>
               <dl class="product__desc-list">
                 <dt class="product__desc-name">Масса</dt>
@@ -92,7 +113,10 @@
             <li class="catalog__item product">
               <a class="product__link" href="#">
                 <h3 class="product__title">Cat Energy PRO 1000 г</h3>
-                <img class="product__image" src="#" width="140" height="107" alt="Банка еды для котов со вкусом рыбы.">
+                <picture>
+                  <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/products/fish-lg-tablet-desk@1x.png 1x, images/products/fish-lg-tablet-desk@2x.png 2x">
+                  <img class="product__image" width="140" height="107" src="images/products/fish-lg-mobile@1x.png" srcset="images/products/fish-lg-mobile@2x.png 2x" alt="Банка еды для котов со вкусом рыбы, большая.">
+                </picture>
               </a>
               <dl class="product__desc-list">
                 <dt class="product__desc-name">Масса</dt>
@@ -109,7 +133,10 @@
             <li class="catalog__item product">
               <a class="product__link" href="#">
                 <h3 class="product__title">Cat Energy SLIM 500 г</h3>
-                <img class="product__image" src="#" width="140" height="107" alt="Банка еды для котов со вкусом гречки.">
+                <picture>
+                  <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/products/buckwheat-sm-tablet-desk@1x.png 1x, images/products/buckwheat-sm-tablet-desk@2x.png 2x">
+                  <img class="product__image" width="140" height="107" src="images/products/buckwheat-sm-mobile@1x.png" srcset="images/products/buckwheat-sm-mobile@2x.png 2x" alt="Банка еды для котов со вкусом гречки.">
+                </picture>
               </a>
               <dl class="product__desc-list">
                 <dt class="product__desc-name">Масса</dt>
@@ -126,7 +153,10 @@
             <li class="catalog__item product">
               <a class="product__link" href="#">
                 <h3 class="product__title">Cat Energy SLIM 1000 г</h3>
-                <img class="product__image" src="#" width="140" height="107" alt="Банка еды для котов со вкусом гречки.">
+                <picture>
+                  <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/products/buckwheat-lg-tablet-desk@1x.png 1x, images/products/buckwheat-lg-tablet-desk@2x.png 2x">
+                  <img class="product__image" width="140" height="107" src="images/products/buckwheat-lg-mobile@1x.png" srcset="images/products/buckwheat-lg-mobile@2x.png 2x" alt="Банка еды для котов со вкусом гречки, большая.">
+                </picture>
               </a>
               <dl class="product__desc-list">
                 <dt class="product__desc-name">Масса</dt>
@@ -143,7 +173,10 @@
             <li class="catalog__item product">
               <a class="product__link" href="#">
                 <h3 class="product__title">Cat Energy SLIM 500 г</h3>
-                <img class="product__image" src="#" width="140" height="107" alt="Банка еды для котов со вкусом риса.">
+                <picture>
+                  <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/products/rice-sm-tablet-desk@1x.png 1x, images/products/rice-sm-tablet-desk@2x.png 2x">
+                  <img class="product__image" width="140" height="107" src="images/products/rice-sm-mobile@1x.png" srcset="images/products/rice-sm-mobile@2x.png 2x" alt="Банка еды для котов со вкусом риса.">
+                </picture>
               </a>
               <dl class="product__desc-list">
                 <dt class="product__desc-name">Масса</dt>
@@ -227,11 +260,15 @@
           <p class="address__title">Приглашаем к сотрудничеству дилеров!</p>
           <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </address>
-        <img class="main-footer__map" src="#" width="320" height="362" alt="Карта Санкт-Петербурга: расположение магазина Cat Energy (ул. Большая Конюшенная, д. 19/8) отмечено меткой.">
+        <picture>
+          <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpeg" srcset="images/map-desk@1x.jpg 1x, images/map-desk@2x.jpg 2x">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/jpeg" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
+          <img class="main-footer__map" width="320" height="362" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" alt="Карта Санкт-Петербурга: расположение магазина Cat Energy (ул. Большая Конюшенная, д. 19/8) отмечено меткой.">
+        </picture>
       </div>
       <div class="contacts">
         <a class="contacts__logo-link" href="index.html">
-          <img class="contacts__logo-text" src="#" width="128" height="24" alt="Логотип Cat Energy">
+          <img class="contacts__logo-text" src="images/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy.">
         </a>
         <ul class="contacts__social-list">
           <li class="contacts__social-item contacts__social-item--vk">

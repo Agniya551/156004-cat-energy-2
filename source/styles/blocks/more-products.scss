@@ -1,0 +1,13 @@
+/* здесь используйте классы для блока "еще больше товаров" */
+
+.more-products__title {
+  @include font-settings($font-family-oswald, normal, 400, 16, 20);
+  color: $text-color-tertiary;
+  text-transform: uppercase;
+}
+
+.more-products__text {
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-color-secondary;
+}

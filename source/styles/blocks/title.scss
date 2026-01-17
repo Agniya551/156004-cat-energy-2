@@ -1,0 +1,11 @@
+/* здесь используйте классы для заголовков */
+
+.title {
+  @include font-settings($font-family-oswald, normal, 400, 24, 24);
+
+  &--xl {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+

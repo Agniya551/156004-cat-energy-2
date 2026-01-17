@@ -1,0 +1,29 @@
+/* здесь используйте классы для блока "живой пример" */
+
+.case__title {
+  line-height: 40px;
+}
+
+.case__text {
+  color: $text-color-secondary;
+}
+
+.case__item {
+  text-align: center;
+}
+
+.case__number {
+  text-transform: uppercase;
+}
+
+.case__description {
+  font-size: 12px;
+  line-height: 19px;
+  color: $text-color-secondary;
+}
+
+.case__text-conclusion {
+  font-family: $font-family-oswald;
+  line-height: 20px;
+  text-align: center;
+}

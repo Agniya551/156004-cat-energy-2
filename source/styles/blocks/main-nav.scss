@@ -1,0 +1,16 @@
+/* здесь используйте классы для основной навигации */
+
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__item {
+  text-align: center;
+}
+
+.main-nav__link {
+  @include font-settings($font-family-oswald, normal, 400, 20, 20);
+  color: $text-color-primary;
+  text-decoration: none;
+  text-transform: uppercase;
+}

@@ -1,0 +1,6 @@
+/* здесь используйте классы для блока акции и новинки */
+
+.promotion__text {
+  @include font-settings ($font-family-oswald, normal, 400, 16, 24);
+  text-align: center;
+}

@@ -1,0 +1,17 @@
+/* здесь используйте классы для товаров из второстепенного каталога */
+
+.other-product {
+  display: grid;
+}
+
+.other-product__title {
+  @include font-settings($font-family-oswald, normal, 400, 16, 16);
+  color: $text-color-secondary-bold;
+  text-transform: uppercase;
+}
+
+.other-product__list {
+  font-size: 14px;
+  line-height: 14px;
+  color: $text-color-secondary;
+}

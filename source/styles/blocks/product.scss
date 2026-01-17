@@ -1,0 +1,22 @@
+/* здесь используйте классы для карточек основных товаров */
+
+.product {
+  display: grid;
+}
+
+.product__link {
+  text-decoration: none;
+}
+
+.product__title {
+  @include font-settings($font-family-oswald, normal, 400, 16, 20);
+  color: $text-color-secondary-bold;
+  text-transform: uppercase;
+}
+
+.product__desc-list {
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-color-secondary;
+}
+

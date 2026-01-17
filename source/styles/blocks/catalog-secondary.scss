@@ -1,0 +1,14 @@
+/* здесь используйте классы для блока каталога с второстепенными товарами */
+
+.catalog-secondary__list {
+  display: grid;
+  list-style: none;
+}
+
+.catalog-secondary__offer-text {
+  background-color: #111111; // ВРЕМЕННАЯ ПОДЛОЖКА
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $text-color-inverse;
+}

@@ -1,0 +1,13 @@
+/* здесь используйте классы для блока с адресом */
+
+.address__title {
+  @include font-settings($font-family-oswald, normal, 400, 16, 20);
+  color: $text-color-tertiary;
+  text-transform: uppercase;
+}
+
+.address__text {
+  font-style: normal;
+  line-height: 20px;
+  color: $text-color-secondary;
+}

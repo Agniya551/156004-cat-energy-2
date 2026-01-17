@@ -1,0 +1,38 @@
+/* здесь используйте классы для главного блока на index */
+.hero__wrapper {
+  display: flex;
+  z-index: 0;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: $text-color-inverse;
+
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 302px;
+    background:
+      linear-gradient(
+        90deg,
+        rgb(99, 167, 60) 0%,
+        rgb(99, 167, 60) calc(50% - 160px),
+        rgba($bg-color-accent, 0.85) calc(50% - 155px),
+        rgba($bg-color-accent, 0.85) calc(50% + 155px),
+        rgb(99, 167, 60) calc(50% + 160px),
+        rgb(99, 167, 60) 100%);
+  }
+}
+
+.hero__slogan {
+  @include font-settings ($font-family-oswald, normal, 400, 14, 14);
+  text-transform: uppercase;
+}
+
+.hero__image {
+  display: inline-block;
+}

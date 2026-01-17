@@ -1,0 +1,17 @@
+/* здесь используйте классы для оформления кнопок */
+
+.button {
+  @include font-settings($font-family-oswald, normal, 400, 16, 20);
+  padding: 10px 26px;
+  background-color: $button-color-accent;
+  color: $text-color-inverse;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+
+  &--secondary {
+    color: $text-color-secondary;
+    background-color: $button-color-primary;
+  }
+}

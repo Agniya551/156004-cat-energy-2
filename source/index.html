@@ -25,7 +25,7 @@
           <img class="main-header__logo-text" width="101" height="18" src="images/logo-text.svg" alt="CAT ENERGY">
         </picture>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--close">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -84,7 +84,7 @@
             <li class="manual__item manual__item--powder">
               <p class="manual__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
-            <li class="manual__item manual__item--cook">
+            <li class="manual__item manual__item--eat">
               <p class="manual__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="manual__item manual__item--time">
@@ -116,10 +116,9 @@
             <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/index/cat-after-tablet-desk@1x.png 1x, images/index/cat-after-tablet-desk@2x.png 2x">
             <img class="comparison-slider__image comparison-slider__image--after" width="280" height="256" src="images/index/cat-after-mobile@1x.png" srcset="images/index/cat-after-mobile@2x.png 2x" alt="Фото кота после похудения.">
           </picture>
-          <div class="comparison-slider__control">
-            <label class="visually-hidden" for="comparison-slider-toggle">Ползунок для сравнения фото кота, до и после похудения</label>
-            <input class="comparison-slider__handle" type="range" name="comparison-slider__toggle" id="comparison-slider-toggle" min="0" max="100" value="50">
-          </div>
+          <button class="comparison-slider__handle" type="button">
+            <span class="visually-hidden">Изменить максимальную цену</span>
+          </button>
         </div>
       </section>
     </main>

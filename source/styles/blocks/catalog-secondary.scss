@@ -5,8 +5,22 @@
   list-style: none;
 }
 
+.catalog-secondary__offer {
+  background-color: $bg-color-accent;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 78px;
+    height: 80px;
+    background-image: url("../../icons/stack.svg#gift");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 78px 80px;
+  }
+}
+
 .catalog-secondary__offer-text {
-  background-color: #111111; // ВРЕМЕННАЯ ПОДЛОЖКА
   font-size: 16px;
   line-height: 20px;
   text-align: center;

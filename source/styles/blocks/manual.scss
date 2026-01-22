@@ -8,6 +8,36 @@
   list-style: none;
 }
 
+.manual__item {
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $bg-color-accent;
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--leaf::before {
+    background-image: url("../../icons/stack.svg#leaf");
+  }
+
+  &--powder::before {
+    background-image: url("../../icons/stack.svg#powder");
+  }
+
+  &--eat::before {
+    background-image: url("../../icons/stack.svg#eat");
+  }
+
+  &--time::before {
+    background-image: url("../../icons/stack.svg#time");
+  }
+}
+
+
 .manual__text {
   color: $text-color-secondary;
 }

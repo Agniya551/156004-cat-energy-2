@@ -4,6 +4,28 @@
   list-style: none;
 }
 
+.programs__item {
+  &--slim::before {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 50px;
+    background-image: url("../../icons/stack.svg#cat-slim");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--pro::before {
+    content: "";
+    display: block;
+    width: 67px;
+    height: 28px;
+    background-image: url("../../icons/stack.svg#cat-pro");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
 .programs__title {
   line-height: 37px;
 }
@@ -17,4 +39,16 @@
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 12px;
+    mask-image: url("../../icons/stack.svg#arrow-long");
+    background-color: $icon-color-primary;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 24px 12px;
+  }
 }

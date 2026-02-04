@@ -1,5 +1,54 @@
 /* здесь используйте классы для блока с контактами */
 
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: $bg-color-secondary;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    padding: 55px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 250px 680px 250px;
+    justify-content: center;
+    padding: 66px 0;
+  }
+}
+
+.contacts__logo-link {
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: 20px 0 0;
+    background-color: $border-color-secondary;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
+}
+
+.contacts__logo-text {
+  display: block;
+  justify-self: center;
+}
+
+.contacts__social-list {
+  display: flex;
+  gap: 24px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
 .contacts__social-item {
   &::before {
     content: "";
@@ -25,7 +74,25 @@
   }
 }
 
+.contacts__dev {
+  &::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: 0 0 20px;
+    background-color: $border-color-secondary;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
+}
+
 .contacts__dev-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 16px;
   line-height: 20px;
   color: $text-color-secondary;

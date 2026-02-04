@@ -1,29 +1,119 @@
 /* здесь используйте классы для блока "живой пример" */
 
+.case {
+  display: flex;
+  flex-direction: column;
+  column-gap: 20px;
+  padding: 25px 20px 40px;
+  background: linear-gradient($bg-color-secondary-bold);
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 367px 1fr;
+    column-gap: 40px;
+    padding: 45px 30px 100px;
+    background-size: 100% 462px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 436px 560px;
+    grid-template-rows: repeat(5, auto);
+    column-gap: 224px;
+    justify-content: center;
+    padding: 70px 0 75px;
+  }
+}
+
 .case__title {
+  margin: 0 0 20px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+  }
 }
 
 .case__text {
+  margin: 0;
   color: $text-color-secondary;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+  }
+}
+
+.case__list {
+  margin: 0;
+  display: flex;
+  gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+  }
 }
 
 .case__item {
+  flex: 1;
   text-align: center;
 }
 
 .case__number {
+  padding: 14px 20px 18px;
   text-transform: uppercase;
+  border: 1px solid $border-color-secondary-bold;
+  border-radius: 3px;
 }
 
 .case__description {
+  position: relative;
+  top: -8px;
+  justify-self: center;
+  margin: 0 18px;
+  padding: 0 14px;
   font-size: 12px;
-  line-height: 19px;
+  line-height: 12px;
   color: $text-color-secondary;
+  background-color: $bg-color-secondary-bold;
 }
 
 .case__text-conclusion {
   font-family: $font-family-oswald;
   line-height: 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+  }
+}
+
+.case__slider {
+  min-height: 256px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    min-height: 512px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+  }
 }

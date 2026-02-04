@@ -1,13 +1,49 @@
 /* здесь используйте классы для header */
 
-.main-nav__toggle {
-  content: "";
-  display: block;
-  width: 18px;
-  height: 18px;
-  mask-image: url("../../icons/stack.svg#close");
-  mask-size: 18px 18px;
-  mask-position: center;
-  mask-repeat: no-repeat;
-  background-color: $icon-color-primary;
+.main-header {
+  z-index: 9;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 13px 20px 15px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 174px 1fr;
+    padding: 25px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 610px 610px;
+    justify-content: center;
+    padding: 55px 110px 30px;
+  }
+}
+
+.main-header__logo {
+  display: grid;
+  grid-template-columns: 33px 1fr;
+  flex-grow: 1;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 60px 1fr;
+    flex-grow: 0;
+    gap: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 70px 1fr;
+    gap: 14px;
+  }
+
+  & picture:last-child,
+  .main-header__logo-text {
+    justify-self: center;
+
+    @media (min-width: $desktop-width) {
+      justify-self: start;
+    }
+  }
 }

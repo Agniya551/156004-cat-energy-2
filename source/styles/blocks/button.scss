@@ -2,7 +2,7 @@
 
 .button {
   @include font-settings($font-family-oswald, normal, 400, 16, 20);
-  padding: 10px 26px;
+  padding: 10px 20px;
   background-color: $button-color-accent;
   color: $text-color-inverse;
   text-align: center;
@@ -13,5 +13,11 @@
   &--secondary {
     color: $text-color-secondary;
     background-color: $button-color-primary;
+  }
+
+  &--lg {
+    padding: 15px 26px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }

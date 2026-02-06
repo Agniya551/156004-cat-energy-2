@@ -2,16 +2,57 @@
 
 .other-product {
   display: grid;
+  padding: 13px 0 19px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    padding: 26px 38px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .other-product__title {
-  @include font-settings($font-family-oswald, normal, 400, 16, 16);
+  margin-bottom: 13px;
+  line-height: 16px;
   color: $text-color-secondary-bold;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .other-product__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
   font-size: 14px;
   line-height: 14px;
   color: $text-color-secondary;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+    justify-content: end;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.other-product__button {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }

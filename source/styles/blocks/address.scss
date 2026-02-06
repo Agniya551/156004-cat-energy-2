@@ -1,6 +1,10 @@
 /* здесь используйте классы для блока с адресом */
 
 .address {
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: minmax(110px, 1fr) 565px 655px minmax(110px, 1fr);
@@ -25,9 +29,17 @@
     padding: 60px 80px;
     background-color: $bg-color-primary;
   }
+
+  &--catalog {
+    background-color: $bg-color-secondary;
+
+    @media (min-width: $desktop-width) {
+      background-color: $bg-color-primary;
+    }
+  }
 }
 
-.address__title {
+.address__invite {
   @include font-settings($font-family-oswald, normal, 400, 16, 20);
   margin: 0;
   color: $text-color-tertiary;

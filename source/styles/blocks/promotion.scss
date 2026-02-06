@@ -1,6 +1,44 @@
 /* здесь используйте классы для блока акции и новинки */
 
+.promotion {
+  display: grid;
+  padding: 40px 20px;
+}
+
+.promotion__title {
+  margin-bottom: 32px;
+}
+
 .promotion__text {
   @include font-settings ($font-family-oswald, normal, 400, 16, 24);
+  margin: 0 0 24px;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    justify-self: center;
+    max-width: 752px;
+  }
+}
+
+.promotion__subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: center;
+    width: 752px;
+  }
+}
+
+.promotion__label {
+  display: flex;
+}
+
+.promotion__input {
+  flex: 1;
 }

@@ -70,7 +70,7 @@ ymaps.ready(() => {
     balloonContent: 'ул. Большая Конюшенная, д. 19/8'
   }, {
     iconLayout: 'default#image',
-    iconImageHref: '../images/map-pin.png',
+    iconImageHref: 'images/map-pin.png',
     ...getIconOptions()
   });
 

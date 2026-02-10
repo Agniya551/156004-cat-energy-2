@@ -47,13 +47,9 @@ ymaps.ready(() => {
 
   // Функция для получения центра карты с условным сдвигом
   function getMapCenter() {
-    if (window.innerWidth >= 1440) {
-      // На десктопе: сдвигаем центр карты
-      return [baseCoords[0] + 0.001, baseCoords[1] - 0.007];
-    } else {
-      // На планшетах/мобилках: центр по метке
-      return baseCoords;
-    }
+    return window.innerWidth >= 1440
+      ? [baseCoords[0] + 0.001, baseCoords[1] - 0.007]
+      : baseCoords;
   }
 
   // Создаём карту
@@ -70,7 +66,7 @@ ymaps.ready(() => {
     balloonContent: 'ул. Большая Конюшенная, д. 19/8'
   }, {
     iconLayout: 'default#image',
-    iconImageHref: '../images/map-pin.png',
+    iconImageHref: 'images/map-pin.png',
     ...getIconOptions()
   });
 
@@ -88,10 +84,13 @@ ymaps.ready(() => {
 
     // 2. Пересчитываем центр карты
     const newCenter = getMapCenter();
-
-    // Проверяем изменение центра (без ymaps.util.areEqualArrays)
     const currentCenter = myMap.getCenter();
-    if (currentCenter[0] !== newCenter[0] || currentCenter[1] !== newCenter[1]) {
+
+    // Проверяем изменение центра
+    if (
+      currentCenter[0] !== newCenter[0] ||
+      currentCenter[1] !== newCenter[1]
+    ) {
       myMap.setCenter(newCenter);
     }
 
@@ -103,9 +102,4 @@ ymaps.ready(() => {
 
   // Начинаем наблюдение за контейнером
   resizeObserver.observe(mapContainer);
-
-  // Дополнительно: обработчик глобального resize (подстраховка)
-  window.addEventListener('resize', () => {
-    resizeObserver.update(); // Запускаем проверку наблюдателя
-  });
 });

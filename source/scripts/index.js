@@ -66,7 +66,7 @@ ymaps.ready(() => {
     balloonContent: 'ул. Большая Конюшенная, д. 19/8'
   }, {
     iconLayout: 'default#image',
-    iconImageHref: 'images/map-pin.png', // Проверьте путь!
+    iconImageHref: 'images/map-pin.png',
     ...getIconOptions()
   });
 
@@ -102,10 +102,4 @@ ymaps.ready(() => {
 
   // Начинаем наблюдение за контейнером
   resizeObserver.observe(mapContainer);
-
-  // Дополнительно: обработчик глобального resize (необязательный)
-  // Можно убрать, если ResizeObserver работает стабильно
-  // window.addEventListener('resize', () => {
-  //   // ResizeObserver автоматически реагирует на изменения
-  // });
 });
